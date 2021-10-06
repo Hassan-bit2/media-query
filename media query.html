@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Media queries</title>
+	<style>
+		.box{
+			background-color: red;
+			color: white;
+			font-size: 35px;
+			text-align: center;
+			display: none;
+		}
+		@media (max-width: 700px) and (min-width: 500px){
+			#box-1{
+				color: orange;
+				background-color: blue;
+				display: block;
+			}
+		}
+		@media (max-width: 500px) and (min-width: 350px){
+			#box-2{
+				display: block;
+				background-color: red;
+				color: white;
+			}
+		}
+		@media (max-width: 300px) and (min-width: 250px){
+			#box-3{
+				display: block;
+				background-color: orange;
+				color: red;
+			}
+		}
+		@media (max-width: 200px) and (min-width: 151px){
+			#bas{
+				display: block;
+				background-color: black;
+				color: red;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box-1">I am a computer</div>
+	<div class="box" id="box-2">I am a tablet</div>
+	<div class="box" id="box-3">I am smart phone</div>
+	<div class="box" id="bas">Bas kar oye or kitna chhota karega!</div>
+</body>
+</html>
